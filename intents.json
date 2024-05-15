@@ -1,0 +1,259 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "How are you?", "Good morning", "Good evening"],
+        "responses": ["Hello{PERSON}! How can I assist you today?", "Hi {PERSON}! What can I do for you?", "Hey {PERSON}! How can I help?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later", "Take care"],
+        "responses": ["Goodbye! Have a great day!", "See you later!", "Take care!"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "I appreciate it", "Thanks a lot"],
+        "responses": ["You're welcome!", "Happy to help!", "No problem!"]
+      },
+      {
+        "tag": "name",
+        "patterns": ["What is your name?", "Who are you?", "Tell me your name"],
+        "responses": ["I am a chatbot created by you!", "You can call me Chatbot.", "I'm your virtual assistant."]
+      },
+      {
+        "tag": "name",
+        "patterns": ["What is my name?", "Who am I?", "Tell me my name"],
+        "responses": ["You are {PERSON}!"]
+      },
+      {
+        "tag": "age",
+        "patterns": ["How old are you?", "What is your age?", "Tell me your age"],
+        "responses": ["I'm ageless!", "I don't have an age.", "I exist outside of time."]
+      },
+      {
+        "tag": "help",
+        "patterns": ["Can you help me?", "I need assistance", "Can you assist me?", "I need help"],
+        "responses": ["Sure, I'm here to help! What do you need assistance with?", "Of course, how can I assist you?"]
+      },
+      {
+        "tag": "joke",
+        "patterns": ["Tell me a joke", "Do you know any jokes?", "Make me laugh"],
+        "responses": ["Why don't scientists trust atoms? Because they make up everything!", "Why did the scarecrow win an award? Because he was outstanding in his field!"]
+      },
+      {
+        "tag": "weather",
+        "patterns": ["What's the weather like?", "Tell me the weather", "How's the weather?"],
+        "responses": ["I can't check the weather right now, but you can try a weather website!", "It looks like it's a beautiful day!"]
+      },
+      {
+        "tag": "time",
+        "patterns": ["What time is it?", "Tell me the time", "Do you know the time?"],
+        "responses": ["I can't tell the time right now, but you can check a clock!", "Time is just an illusion!"]
+      },
+      {
+        "tag": "date",
+        "patterns": ["What date is it?", "Tell me the date", "What's today's date?"],
+        "responses": ["I'm not sure of the date right now, but you can check a calendar!", "Every day is a good day!"]
+      },
+      {
+        "tag": "day",
+        "patterns": ["What day is it?", "Tell me the day", "What's today?"],
+        "responses": ["I'm not sure of the day right now, but you can check a calendar!", "Every day is a special day!"]
+      },
+      {
+        "tag": "hobby",
+        "patterns": ["What are your hobbies?", "Do you have any hobbies?", "What do you like to do?"],
+        "responses": ["I enjoy chatting with you!", "Helping people is my hobby!", "I love learning new things."]
+      },
+      {
+        "tag": "favorite_food",
+        "patterns": ["What's your favorite food?", "Do you have a favorite food?", "Tell me your favorite food"],
+        "responses": ["I don't eat, but I hear pizza is great!", "Food for thought is my favorite!"]
+      },
+      {
+        "tag": "favorite_color",
+        "patterns": ["What's your favorite color?", "Do you have a favorite color?", "Tell me your favorite color"],
+        "responses": ["I love all colors!", "Every color is beautiful!", "Blue is quite calming, don't you think?"]
+      },
+      {
+        "tag": "hometown",
+        "patterns": ["Where are you from?", "What's your hometown?", "Tell me your hometown"],
+        "responses": ["I live in the digital world!", "I'm from the internet!", "I was created right here!"]
+      },
+      {
+        "tag": "favorite_movie",
+        "patterns": ["What's your favorite movie?", "Do you have a favorite movie?", "Tell me your favorite movie"],
+        "responses": ["I don't watch movies, but I've heard Inception is mind-blowing!", "Movies are great! What's your favorite?"]
+      },
+      {
+        "tag": "sports",
+        "patterns": ["Do you like sports?", "What's your favorite sport?", "Tell me your favorite sport"],
+        "responses": ["I enjoy watching people play!", "All sports are exciting!", "What's your favorite sport?"]
+      },
+      {
+        "tag": "music",
+        "patterns": ["Do you like music?", "What's your favorite song?", "Tell me your favorite song"],
+        "responses": ["I love all music!", "Every song has its charm!", "Music is the universal language!"]
+      },
+      {
+        "tag": "book",
+        "patterns": ["What's your favorite book?", "Do you like reading?", "Tell me your favorite book"],
+        "responses": ["Books are amazing!", "I love learning new things from books!", "What's your favorite book?"]
+      },
+      {
+        "tag": "animal",
+        "patterns": ["What's your favorite animal?", "Do you like animals?", "Tell me your favorite animal"],
+        "responses": ["All animals are wonderful!", "I love every creature!", "What's your favorite animal?"]
+      },
+      {
+        "tag": "travel",
+        "patterns": ["Do you like traveling?", "What's your favorite place?", "Tell me your favorite place"],
+        "responses": ["I love exploring new ideas!", "Every place has its beauty!", "Where do you like to travel?"]
+      },
+      {
+        "tag": "hobbies_user",
+        "patterns": ["What are your hobbies?", "What do you like to do in your free time?", "Tell me your hobbies"],
+        "responses": ["I enjoy chatting with you!", "Helping people is my hobby!", "I love learning new things."]
+      },
+      {
+        "tag": "time_user",
+        "patterns": ["What's the time?", "Tell me the time", "Do you know the time?"],
+        "responses": ["I'm not sure of the time right now, but you can check a clock!", "Time flies when you're having fun!"]
+      },
+      {
+        "tag": "day_user",
+        "patterns": ["What's today?", "Tell me the day", "What's the day?"],
+        "responses": ["I'm not sure of the day right now, but you can check a calendar!", "Every day is a new opportunity!"]
+      },
+      {
+        "tag": "place_user",
+        "patterns": ["Where are you?", "Where do you live?", "Tell me your location"],
+        "responses": ["I live in the digital world!", "I'm everywhere and nowhere!", "I exist in the cloud!"]
+      },
+      {
+        "tag": "feeling_user",
+        "patterns": ["How are you feeling?", "What's your mood?", "Tell me how you're feeling"],
+        "responses": ["I'm feeling great, thanks for asking!", "I'm always here to help!", "I'm feeling chatty!"]
+      },
+      {
+        "tag": "help_user",
+        "patterns": ["I need help", "Can you help me?", "Assist me"],
+        "responses": ["Sure, I'm here to help! What do you need assistance with?", "Of course, how can I assist you?"]
+      },
+      {
+        "tag": "fact",
+        "patterns": ["Tell me a fact", "Do you know any facts?", "Give me a fact"],
+        "responses": ["Did you know that honey never spoils?", "Did you know that octopuses have three hearts?"]
+      },
+      {
+        "tag": "riddle",
+        "patterns": ["Tell me a riddle", "Do you know any riddles?", "Give me a riddle"],
+        "responses": ["What has keys but can't open locks? A piano!", "What has a head, a tail, but no body? A coin!"]
+      },
+      {
+        "tag": "news",
+        "patterns": ["What's the news?", "Tell me the news", "Any news today?"],
+        "responses": ["I can't check the news right now, but you can try a news website!", "Stay informed with your favorite news source!"]
+      },
+      {
+        "tag": "game",
+        "patterns": ["Do you want to play a game?", "Let's play a game", "Game time"],
+        "responses": ["Sure, let's play! How about a riddle?", "I'm ready for a game! What do you want to play?"]
+      },
+      {
+        "tag": "calculator",
+        "patterns": ["Can you calculate something?", "I need to do some math", "Do you know how to calculate?"],
+        "responses": ["Sure, I can help with that"]
+
+    },
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon"],
+        "responses": ["Hello! How can I assist you with your college admissions today?", "Hi there! What can I help you with regarding college admissions?"]
+      },
+      {
+        "tag": "admission_procedure",
+        "patterns": ["What is the admission procedure?", "How do I apply?", "What are the steps to apply for admission?", "Can you explain the admission process?"],
+        "responses": [
+          "The admission procedure generally involves the following steps:\n1. Fill out the online application form.\n2. Submit the required documents (transcripts, recommendation letters, etc.).\n3. Pay the application fee.\n4. Schedule and attend an interview (if required).\n5. Wait for the admission decision."
+        ]
+      },
+      {
+        "tag": "admission_requirements",
+        "patterns": ["What are the admission requirements?", "What do I need to apply?", "What qualifications are required for admission?", "Can you list the admission criteria?"],
+        "responses": [
+          "The admission requirements typically include:\n1. Completed application form.\n2. High school transcripts.\n3. Standardized test scores (SAT, ACT, etc.).\n4. Letters of recommendation.\n5. Personal statement or essay.\n6. Application fee."
+        ]
+      },
+      {
+        "tag": "application_deadlines",
+        "patterns": ["What are the application deadlines?", "When is the application due?", "What is the last date to apply?", "When should I submit my application?"],
+        "responses": [
+          "The application deadlines are as follows:\n1. Early Decision: November 1\n2. Early Action: November 15\n3. Regular Decision: January 15\n4. Transfer Students: March 1"
+        ]
+      },
+      {
+        "tag": "document_submission",
+        "patterns": ["What documents do I need to submit?", "Which documents are required for admission?", "Can you list the documents needed for application?", "What paperwork is necessary for applying?"],
+        "responses": [
+          "The required documents for admission include:\n1. High school transcripts.\n2. Standardized test scores (SAT, ACT, etc.).\n3. Letters of recommendation.\n4. Personal statement or essay.\n5. Copy of your passport (for international students)."
+        ]
+      },
+      {
+        "tag": "interview_details",
+        "patterns": ["Is there an interview process?", "Do I need to attend an interview?", "What is the interview process like?", "Can you tell me about the interview?"],
+        "responses": [
+          "Some programs require an interview as part of the admission process. If an interview is needed, you will be contacted to schedule it after submitting your application. The interview may be conducted in-person or online, and it is an opportunity for us to learn more about you and for you to ask any questions you may have."
+        ]
+      },
+      {
+        "tag": "application_fees",
+        "patterns": ["Is there an application fee?", "How much is the application fee?", "Do I need to pay to apply?", "What is the cost to apply?"],
+        "responses": [
+          "Yes, there is an application fee. The fee is $50 for domestic students and $75 for international students. Fee waivers are available for eligible students. Please check our website for more details."
+        ]
+      },
+      {
+        "tag": "financial_aid",
+        "patterns": ["Is financial aid available?", "How do I apply for financial aid?", "What financial aid options are there?", "Can I get financial assistance?"],
+        "responses": [
+          "Yes, financial aid is available. To apply for financial aid, you need to fill out the FAFSA form (for US students) or the CSS Profile (for international students). Scholarships, grants, and loans are available based on need and merit. Please visit our financial aid office for more information."
+        ]
+      },
+      {
+        "tag": "scholarships",
+        "patterns": ["Are there any scholarships available?", "How can I apply for scholarships?", "What scholarships are offered?", "Can I get a scholarship?"],
+        "responses": [
+          "Yes, we offer several scholarships based on academic merit, financial need, and extracurricular involvement. To apply, you need to fill out the scholarship application form available on our website. Deadlines for scholarship applications are usually aligned with admission application deadlines."
+        ]
+      },
+      {
+        "tag": "campus_tours",
+        "patterns": ["Can I visit the campus?", "Are campus tours available?", "How do I schedule a campus tour?", "Can I see the campus?"],
+        "responses": [
+          "Yes, campus tours are available. You can schedule a tour by visiting our website and filling out the tour request form. Tours are available Monday through Friday, and we also offer virtual tours for those who cannot visit in person."
+        ]
+      },
+      {
+        "tag": "programs_offered",
+        "patterns": ["What programs do you offer?", "Can you list the courses available?", "What majors are available?", "What academic programs are offered?"],
+        "responses": [
+          "We offer a variety of programs across different fields of study, including:\n1. Engineering\n2. Business\n3. Computer Science\n4. Arts and Humanities\n5. Social Sciences\n6. Natural Sciences\n7. Medicine\n8. Law\nPlease visit our website for a complete list of programs and courses."
+        ]
+      },
+      {
+        "tag": "housing_options",
+        "patterns": ["What are the housing options?", "Do you offer on-campus housing?", "Can I live on campus?", "What housing facilities are available?"],
+        "responses": [
+          "Yes, we offer on-campus housing for students. There are several residence halls with different room types, including single, double, and suite-style rooms. Housing applications can be submitted after you have been admitted. Visit our housing office for more details."
+        ]
+      },
+      {
+        "tag": "contact_admissions",
+        "patterns": ["How can I contact the admissions office?", "What is the admissions office email?", "Can I speak to an admissions officer?", "What is the phone number for admissions?"],
+        "responses": [
+          "You can contact the admissions office via email at admissions@example.com or by phone at (123) 456-7890. Our office hours are Monday to Friday, 9 AM to 5 PM. You can also visit our office in person at the Admissions Building, Room 101."
+        ]
+      }
+]
+}
