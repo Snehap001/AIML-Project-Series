@@ -140,16 +140,7 @@
         "patterns": ["I need help", "Can you help me?", "Assist me"],
         "responses": ["Sure, I'm here to help! What do you need assistance with?", "Of course, how can I assist you?"]
       },
-      {
-        "tag": "fact",
-        "patterns": ["Tell me a fact", "Do you know any facts?", "Give me a fact"],
-        "responses": ["Did you know that honey never spoils?", "Did you know that octopuses have three hearts?"]
-      },
-      {
-        "tag": "riddle",
-        "patterns": ["Tell me a riddle", "Do you know any riddles?", "Give me a riddle"],
-        "responses": ["What has keys but can't open locks? A piano!", "What has a head, a tail, but no body? A coin!"]
-      },
+      
       {
         "tag": "news",
         "patterns": ["What's the news?", "Tell me the news", "Any news today?"],
