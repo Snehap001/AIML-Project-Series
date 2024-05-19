@@ -3,179 +3,41 @@
       {
         "tag": "greeting",
         "patterns": ["Hi", "Hello", "Hey", "How are you?", "Good morning", "Good evening"],
-        "responses": ["Hello{PERSON}! How can I assist you today?", "Hi {PERSON}! What can I do for you?", "Hey {PERSON}! How can I help?"]
+        "responses": ["Hello {PERSON}! How can I assist you ?", "Hi {PERSON}! What can I do for you?", "Hey {PERSON}! How can I help?"]
       },
       {
         "tag": "goodbye",
-        "patterns": ["Bye", "Goodbye", "See you later", "Take care"],
-        "responses": ["Goodbye! Have a great day!", "See you later!", "Take care!"]
+        "patterns": ["Bye", "Goodbye", "See you later", "Meet you again"],
+        "responses": ["Goodbye! Have a great day!", "See you again!", "Hope I could be of help!"]
       },
       {
         "tag": "thanks",
         "patterns": ["Thanks", "Thank you", "I appreciate it", "Thanks a lot"],
         "responses": ["You're welcome!", "Happy to help!", "No problem!"]
       },
-      {
-        "tag": "name",
-        "patterns": ["What is your name?", "Who are you?", "Tell me your name"],
-        "responses": ["I am a chatbot created by you!", "You can call me Chatbot.", "I'm your virtual assistant."]
-      },
-      {
-        "tag": "name",
-        "patterns": ["What is my name?", "Who am I?", "Tell me my name"],
-        "responses": ["You are {PERSON}!"]
-      },
-      {
-        "tag": "age",
-        "patterns": ["How old are you?", "What is your age?", "Tell me your age"],
-        "responses": ["I'm ageless!", "I don't have an age.", "I exist outside of time."]
-      },
-      {
-        "tag": "help",
-        "patterns": ["Can you help me?", "I need assistance", "Can you assist me?", "I need help"],
-        "responses": ["Sure, I'm here to help! What do you need assistance with?", "Of course, how can I assist you?"]
-      },
-      {
-        "tag": "joke",
-        "patterns": ["Tell me a joke", "Do you know any jokes?", "Make me laugh"],
-        "responses": ["Why don't scientists trust atoms? Because they make up everything!", "Why did the scarecrow win an award? Because he was outstanding in his field!"]
-      },
-      {
-        "tag": "weather",
-        "patterns": ["What's the weather like?", "Tell me the weather", "How's the weather?"],
-        "responses": ["I can't check the weather right now, but you can try a weather website!", "It looks like it's a beautiful day!"]
-      },
-      {
-        "tag": "time",
-        "patterns": ["What time is it?", "Tell me the time", "Do you know the time?"],
-        "responses": ["I can't tell the time right now, but you can check a clock!", "Time is just an illusion!"]
-      },
-      {
-        "tag": "date",
-        "patterns": ["What date is it?", "Tell me the date", "What's today's date?"],
-        "responses": ["I'm not sure of the date right now, but you can check a calendar!", "Every day is a good day!"]
-      },
-      {
-        "tag": "day",
-        "patterns": ["What day is it?", "Tell me the day", "What's today?"],
-        "responses": ["I'm not sure of the day right now, but you can check a calendar!", "Every day is a special day!"]
-      },
-      {
-        "tag": "hobby",
-        "patterns": ["What are your hobbies?", "Do you have any hobbies?", "What do you like to do?"],
-        "responses": ["I enjoy chatting with you!", "Helping people is my hobby!", "I love learning new things."]
-      },
-      {
-        "tag": "favorite_food",
-        "patterns": ["What's your favorite food?", "Do you have a favorite food?", "Tell me your favorite food"],
-        "responses": ["I don't eat, but I hear pizza is great!", "Food for thought is my favorite!"]
-      },
-      {
-        "tag": "favorite_color",
-        "patterns": ["What's your favorite color?", "Do you have a favorite color?", "Tell me your favorite color"],
-        "responses": ["I love all colors!", "Every color is beautiful!", "Blue is quite calming, don't you think?"]
-      },
-      {
-        "tag": "hometown",
-        "patterns": ["Where are you from?", "What's your hometown?", "Tell me your hometown"],
-        "responses": ["I live in the digital world!", "I'm from the internet!", "I was created right here!"]
-      },
-      {
-        "tag": "favorite_movie",
-        "patterns": ["What's your favorite movie?", "Do you have a favorite movie?", "Tell me your favorite movie"],
-        "responses": ["I don't watch movies, but I've heard Inception is mind-blowing!", "Movies are great! What's your favorite?"]
-      },
-      {
-        "tag": "sports",
-        "patterns": ["Do you like sports?", "What's your favorite sport?", "Tell me your favorite sport"],
-        "responses": ["I enjoy watching people play!", "All sports are exciting!", "What's your favorite sport?"]
-      },
-      {
-        "tag": "music",
-        "patterns": ["Do you like music?", "What's your favorite song?", "Tell me your favorite song"],
-        "responses": ["I love all music!", "Every song has its charm!", "Music is the universal language!"]
-      },
-      {
-        "tag": "book",
-        "patterns": ["What's your favorite book?", "Do you like reading?", "Tell me your favorite book"],
-        "responses": ["Books are amazing!", "I love learning new things from books!", "What's your favorite book?"]
-      },
-      {
-        "tag": "animal",
-        "patterns": ["What's your favorite animal?", "Do you like animals?", "Tell me your favorite animal"],
-        "responses": ["All animals are wonderful!", "I love every creature!", "What's your favorite animal?"]
-      },
-      {
-        "tag": "travel",
-        "patterns": ["Do you like traveling?", "What's your favorite place?", "Tell me your favorite place"],
-        "responses": ["I love exploring new ideas!", "Every place has its beauty!", "Where do you like to travel?"]
-      },
-      {
-        "tag": "hobbies_user",
-        "patterns": ["What are your hobbies?", "What do you like to do in your free time?", "Tell me your hobbies"],
-        "responses": ["I enjoy chatting with you!", "Helping people is my hobby!", "I love learning new things."]
-      },
-      {
-        "tag": "time_user",
-        "patterns": ["What's the time?", "Tell me the time", "Do you know the time?"],
-        "responses": ["I'm not sure of the time right now, but you can check a clock!", "Time flies when you're having fun!"]
-      },
-      {
-        "tag": "day_user",
-        "patterns": ["What's today?", "Tell me the day", "What's the day?"],
-        "responses": ["I'm not sure of the day right now, but you can check a calendar!", "Every day is a new opportunity!"]
-      },
-      {
-        "tag": "place_user",
-        "patterns": ["Where are you?", "Where do you live?", "Tell me your location"],
-        "responses": ["I live in the digital world!", "I'm everywhere and nowhere!", "I exist in the cloud!"]
-      },
-      {
-        "tag": "feeling_user",
-        "patterns": ["How are you feeling?", "What's your mood?", "Tell me how you're feeling"],
-        "responses": ["I'm feeling great, thanks for asking!", "I'm always here to help!", "I'm feeling chatty!"]
-      },
-      {
-        "tag": "help_user",
-        "patterns": ["I need help", "Can you help me?", "Assist me"],
-        "responses": ["Sure, I'm here to help! What do you need assistance with?", "Of course, how can I assist you?"]
-      },
+      
       
       {
-        "tag": "news",
-        "patterns": ["What's the news?", "Tell me the news", "Any news today?"],
-        "responses": ["I can't check the news right now, but you can try a news website!", "Stay informed with your favorite news source!"]
-      },
-      {
-        "tag": "game",
-        "patterns": ["Do you want to play a game?", "Let's play a game", "Game time"],
-        "responses": ["Sure, let's play! How about a riddle?", "I'm ready for a game! What do you want to play?"]
-      },
-      {
-        "tag": "calculator",
-        "patterns": ["Can you calculate something?", "I need to do some math", "Do you know how to calculate?"],
-        "responses": ["Sure, I can help with that"]
-
+        "tag":"application_timeline",
+        "patterns":["When should I start applying to college?","What is the time for the application process?","When should I start the application process?"],
+        "responses":["You can start the application process only after the portal for admission opens which would probably open 1 week after the results. "]    
     },
-    {
-        "tag": "greeting",
-        "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon"],
-        "responses": ["Hello! How can I assist you with your college admissions today?", "Hi there! What can I help you with regarding college admissions?"]
-      },
+    
       {
         "tag": "admission_procedure",
-        "patterns": ["What is the admission procedure?", "How do I apply?", "What are the steps to apply for admission?", "Can you explain the admission process?"],
+        "patterns": ["What is the admission procedure?", "How do I apply for admission?", "What are the steps to apply for admission?", "Can you explain the admission process?"],
         "responses": [
-          "The admission procedure generally involves the following steps:\n1. Fill out the online application form.\n2. Submit the required documents (transcripts, recommendation letters, etc.).\n3. Pay the application fee.\n4. Schedule and attend an interview (if required).\n5. Wait for the admission decision."
+          "The admission procedure generally involves the following steps:\n1. Fill out the online application form.\n2. Submit the required documents (transcripts, recommendation letters, etc.).\n3. Select the priority for your branch and colleges\n4. .\n5. Wait for the admission decision."
         ]
       },
       {
         "tag": "admission_requirements",
         "patterns": ["What are the admission requirements?", "What do I need to apply?", "What qualifications are required for admission?", "Can you list the admission criteria?"],
         "responses": [
-          "The admission requirements typically include:\n1. Completed application form.\n2. High school transcripts.\n3. Standardized test scores (SAT, ACT, etc.).\n4. Letters of recommendation.\n5. Personal statement or essay.\n6. Application fee."
+          "The admission requirements typically include:\n1. Successful qualification in JEE Advanced.\n2. Proper documents availability.\n.3. Timely application.\n4. Application fee and documents submission.  "
         ]
       },
+      
       {
         "tag": "application_deadlines",
         "patterns": ["What are the application deadlines?", "When is the application due?", "What is the last date to apply?", "When should I submit my application?"],
@@ -187,28 +49,22 @@
         "tag": "document_submission",
         "patterns": ["What documents do I need to submit?", "Which documents are required for admission?", "Can you list the documents needed for application?", "What paperwork is necessary for applying?"],
         "responses": [
-          "The required documents for admission include:\n1. High school transcripts.\n2. Standardized test scores (SAT, ACT, etc.).\n3. Letters of recommendation.\n4. Personal statement or essay.\n5. Copy of your passport (for international students)."
+          "The required documents for admission include:\n1.PAN Card .\n2. Parental documents.\n3. Jee Advanced score card.\n4. Marksheet cum passing certificated.\n5. Form undertakings as mentioned in the website."
         ]
       },
       {
         "tag": "interview_details",
         "patterns": ["Is there an interview process?", "Do I need to attend an interview?", "What is the interview process like?", "Can you tell me about the interview?"],
         "responses": [
-          "Some programs require an interview as part of the admission process. If an interview is needed, you will be contacted to schedule it after submitting your application. The interview may be conducted in-person or online, and it is an opportunity for us to learn more about you and for you to ask any questions you may have."
+          "No there is no requirement for an interview for BTech programs"
         ]
       },
-      {
-        "tag": "application_fees",
-        "patterns": ["Is there an application fee?", "How much is the application fee?", "Do I need to pay to apply?", "What is the cost to apply?"],
-        "responses": [
-          "Yes, there is an application fee. The fee is $50 for domestic students and $75 for international students. Fee waivers are available for eligible students. Please check our website for more details."
-        ]
-      },
+      
       {
         "tag": "financial_aid",
         "patterns": ["Is financial aid available?", "How do I apply for financial aid?", "What financial aid options are there?", "Can I get financial assistance?"],
         "responses": [
-          "Yes, financial aid is available. To apply for financial aid, you need to fill out the FAFSA form (for US students) or the CSS Profile (for international students). Scholarships, grants, and loans are available based on need and merit. Please visit our financial aid office for more information."
+          "Yes, financial aid is available for students with annual family income less than 9 LPA. You need to submit the the documents required. "
         ]
       },
       {
@@ -226,10 +82,15 @@
         ]
       },
       {
+        "tag":"specific_programs",
+        "patterns":["Give more information about Computer Science ","Give more information about Mathematics and Computing ","Give more information about Electrical Engineering ","Give more information about Mechanical Engineering ","Give more information about Chemical Engineering ","Give more information about  Civil Engineering ","Give more information about Energy Engineering "],
+        "responses":["Information about specific programs is available on the site https://home.iitd.ac.in/"]
+      },
+      {
         "tag": "programs_offered",
         "patterns": ["What programs do you offer?", "Can you list the courses available?", "What majors are available?", "What academic programs are offered?"],
         "responses": [
-          "We offer a variety of programs across different fields of study, including:\n1. Engineering\n2. Business\n3. Computer Science\n4. Arts and Humanities\n5. Social Sciences\n6. Natural Sciences\n7. Medicine\n8. Law\nPlease visit our website for a complete list of programs and courses."
+          "We offer a variety of programs across different fields of study, including:\n1.Computer Science and Engineering\n2. Mathematics and Computing \n3. Electrical Engineering\n4. Mechanical Engineering\n5. Chemical Engineering\n6. Civil Engineering\n7. Energy Engineering \n8. Biotech Engineering \nPlease visit our website for a complete list of programs and courses."
         ]
       },
       {
@@ -244,6 +105,422 @@
         "patterns": ["How can I contact the admissions office?", "What is the admissions office email?", "Can I speak to an admissions officer?", "What is the phone number for admissions?"],
         "responses": [
           "You can contact the admissions office via email at admissions@example.com or by phone at (123) 456-7890. Our office hours are Monday to Friday, 9 AM to 5 PM. You can also visit our office in person at the Admissions Building, Room 101."
+        ]
+      },
+      {
+        "tag": "PAN_card_availability",
+        "patterns": [
+          "What to do if I don’t have a PAN card?",
+          "What should I do if I'm missing a PAN card?",
+          "What steps should I take if I lack a PAN card?",
+          "If I don't possess a PAN card, what should I do?",
+          "How can I proceed without a PAN card?"
+        ],
+        "responses": [
+          "Fill & upload the Undertaking form (https://owncloud.iitd.ac.in/nextcloud/index.php/s/prHgdQFYL7Wg3RA) in the field where the PAN card is sought. The date in the undertaking is for 31st August 2023 but ONLY in the case of PAN card, it’s acceptable to be submitted beyond that date."
+        ]
+      },
+      {
+        "tag": "parental_document_requirements",
+        "patterns": [
+          "Is the PAN Card/Aadhaar required for both parents?",
+          "Do both parents need to have a PAN Card or Aadhaar?",
+          "Are both parents required to possess a PAN Card and Aadhaar?",
+          "Should both parents hold a PAN Card and Aadhaar?",
+          "Is it necessary for both parents to have a PAN Card or Aadhaar?"
+        ],
+        "responses": [
+          "Preferably yes, but Aadhaar is mandatory."
+        ]
+      },
+      {
+        "tag": "document_upload_location",
+        "patterns": [
+          "Which document is to be uploaded where ‘RECEIPT OF PAYMENT MADE’ is sought in FORM A?",
+          "What document should I upload for 'RECEIPT OF PAYMENT MADE' in FORM A?",
+          "Where should I upload the document for 'RECEIPT OF PAYMENT MADE' requested in FORM A?",
+          "Which file do I upload in FORM A where 'RECEIPT OF PAYMENT MADE' is required?",
+          "What should be uploaded in FORM A under 'RECEIPT OF PAYMENT MADE'?"
+        ],
+        "responses": [
+          "Upload the receipt of the fee paid to the Institute on the SBI I-Collect portal."
+        ]
+      },
+      {
+        "tag": "jee_receipt_upload",
+        "patterns": [
+          "Is receipt of payment to JEE at the time of seat acceptance to be uploaded?",
+          "Do I need to upload a receipt for the JEE seat acceptance payment?",
+          "Should the JEE seat acceptance payment receipt be uploaded?",
+          "Is uploading the JEE seat acceptance payment receipt necessary?",
+          "Must I upload a payment receipt for JEE seat acceptance?"
+        ],
+        "responses": [
+          "No separate receipt is to be uploaded. It’d be verified from the ‘Document verification-cum-seat allotment letter’."
+        ]
+      },
+      {
+        "tag": "marksheet_cum_passing_certificate",
+        "patterns": [
+          "What to do when a Marksheet-cum-passing Certificate has been issued instead of separate documents in class Xth & XIIth?",
+          "What should I upload if I have a combined Marksheet and passing Certificate for class Xth and XIIth?",
+          "If I have a single document as a Marksheet and passing Certificate, where should it be uploaded for class Xth and XIIth?",
+          "What action to take if one document serves as both Marksheet and passing Certificate for class Xth and XIIth?",
+          "How to handle the upload if the Marksheet and passing Certificate are combined into one document for class Xth and XIIth?"
+        ],
+        "responses": [
+          "Upload the same document in both the fields marked for ‘passing certificate’ & ‘marksheet’ in class Xth & XIIth."
+        ]
+      },
+      {
+        "tag": "form_d_above_9_lakhs",
+        "patterns": [
+          "Is FORM D to be uploaded if the family income is above 9 Lakhs?",
+          "Do I need to upload FORM D for a family income exceeding 9 Lakhs?",
+          "Should FORM D be submitted if our family income is over 9 Lakhs?",
+          "Is it required to upload FORM D when the family income is more than 9 Lakhs?",
+          "Must FORM D be uploaded if the family income surpasses 9 Lakhs?"
+        ],
+        "responses": [
+          "No, FORM C is sufficient. No supporting documents required."
+        ]
+      },
+      {
+        "tag": "form_d_below_9_lakhs",
+        "patterns": [
+          "Is FORM D to be uploaded if the family income is below 9 Lakhs?",
+          "Do I need to upload FORM D if our family income is under 9 Lakhs?",
+          "Should FORM D be submitted when the family income is less than 9 Lakhs?",
+          "Is FORM D required for a family income below 9 Lakhs?",
+          "What documents are needed if the family income is less than 9 Lakhs?"
+        ],
+        "responses": [
+          "Yes, FORM C & FORM D need to be uploaded along with the supporting documents (ITR 2022-23/Income certificate/Form-16/BPL Card) [ANY ONE]. This is required for all categories. Kindly ensure the Form D is signed by the parents."
+        ]
+      },
+      {
+        "tag": "documents_for_income_below_60k",
+        "patterns": [
+          "Which documents are to be uploaded if the family income is below 60 thousand?",
+          "What should I upload if our family income is less than 60 thousand?",
+          "Which forms are required for a family income under 60 thousand?",
+          "What documentation is needed if the family income is below 60K?",
+          "Which documents must be submitted for an income less than 60 thousand?"
+        ],
+        "responses": [
+          "FORM C & FORM D need to be uploaded along with the supporting documents (BPL Card & Income certificate if available)."
+        ]
+      },
+      {
+        "tag": "itr_upload_requirement",
+        "patterns": [
+          "Whether the ITR is to be uploaded for both parents?",
+          "Do I need to upload ITR forms for both of my parents?",
+          "Is it required to upload the Income Tax Return for each parent?",
+          "Should the ITR be provided for both parents when uploading documents?",
+          "Must both parents' ITRs be uploaded during the document submission?"
+        ],
+        "responses": [
+          "Yes. In cases where a parent/s is not earning the FORM has to be filled/uploaded accordingly."
+        ]
+      },
+      {
+        "tag": "form_f_g_witnesses",
+        "patterns": [
+          "Who could be the witnesses in FORM F & FORM G?",
+          "Who are eligible to be witnesses for FORM F and FORM G?",
+          "What qualifications should a witness have for FORM F and FORM G?",
+          "Can anyone be a witness for FORM F and FORM G?",
+          "Who is allowed to act as a witness in FORM F and FORM G?"
+        ],
+        "responses": [
+          "Any consenting adult could be a witness in FORM F."
+        ]
+      },
+      {
+        "tag": "form_g_nominees",
+        "patterns": [
+          "Who could be the nominees in FORM G?",
+          "Who are designated as nominees in FORM G?",
+          "What individuals are eligible to be nominees in FORM G?",
+          "Can parents or guardians be nominees in FORM G?",
+          "Who can be listed as a nominee on FORM G?"
+        ],
+        "responses": [
+          "The parents/guardians of the student are the nominees."
+        ]
+      },
+      {
+        "tag": "form_h2_sbi_account",
+        "patterns": [
+          "What to mention in FORM H2 if the student doesn’t have an SBI A/c?",
+          "What should I write in FORM H2 if I don't have an SBI account?",
+          "If absent, what details go into FORM H2 concerning an SBI account?",
+          "What entry is required on FORM H2 if no SBI account exists?",
+          "How to fill FORM H2 if there is no SBI account?"
+        ],
+        "responses": [
+          "The field for SBI A/c no. may be left blank until the student opens an A/c in SBI."
+        ]
+      },
+      {
+        "tag": "program_department_info",
+        "patterns": [
+          "What is the students’ Programme & Department?",
+          "Can you tell me about the student's Programme and Department details?",
+          "What are the details of the Programme and Department for students?",
+          "Where can I find information about the students' Programme and Department?",
+          "What is the academic structure for students’ Programmes and Departments?"
+        ],
+        "responses": [
+          "Each Programme is offered by an Academic Unit which could be a Department, a Centre or a School. The Programme is the Degree you are enrolled in. Example – Programme: B.Tech. in Engineering and Computational Mechanics; Department: Applied Mechanics (refer to page no. 2 of the Courses of Study 2023-24 in the link: https://home.iitd.ac.in/uploads/course-of-study/IITD-CoS-2022-23-for-Web.pdf)"
+        ]
+      },
+      {
+        "tag": "fee_payment_details",
+        "patterns": [
+          "How much fee is to be paid by the student?",
+          "What is the fee amount required for students?",
+          "Can you tell me how much students need to pay in fees?",
+          "What are the tuition fees for students?",
+          "How much are students expected to pay for their fees?"
+        ],
+        "responses": [
+          "Refer to the UG Instruction Sheet -3 given in the link: https://owncloud.iitd.ac.in/nextcloud/index.php/s/3PQwdNRYm6pDfYZ"
+        ]
+      },
+      {
+        "tag": "missing_documents_solution",
+        "patterns": [
+          "What to do in case I don’t have the required documents to upload on Scorner?",
+          "What if I am missing documents needed for upload on Scorner?",
+          "What should I do if I don't have all the necessary documents for Scorner?",
+          "What actions to take if required documents are unavailable for Scorner upload?",
+          "How to proceed on Scorner without the required documents?"
+        ],
+        "responses": [
+          "Fill & upload the Undertaking form -2023 given on the Institute website. https://owncloud.iitd.ac.in/nextcloud/index.php/s/prHgdQFYL7Wg3RA"
+        ]
+      },
+      {
+        "tag": "hostel_name_communication",
+        "patterns": [
+          "When would the hostel name be communicated to the student?",
+          "When will students be informed about their hostel assignment?",
+          "How will I know which hostel I have been assigned to?",
+          "When is the hostel allocation information given to students?",
+          "What is the timing for hostel name announcements to students?"
+        ],
+        "responses": [
+          "An email would be sent to the student by the Dean of Student Affairs (011-26597106)."
+        ]
+      },
+      {
+        "tag": "form_a_verification_status",
+        "patterns": [
+          "Why does FORM A show ‘Pending verification’?",
+          "What does 'Pending verification' mean on FORM A?",
+          "Why is there a 'Pending verification' status on FORM A?",
+          "What causes FORM A to display 'Pending verification'?",
+          "Why hasn't FORM A been verified yet?"
+        ],
+        "responses": [
+          "The uploaded documents would be verified by the Academics Section of IIT Delhi during Registration/Verification until then it’d remain so."
+        ]
+      },
+      {
+        "tag": "parent_accommodation",
+        "patterns": [
+          "Is accommodation provided to the parents for the duration of Orientation & Registration?",
+          "Do parents receive accommodation during Orientation and Registration?",
+          "Are there accommodations for parents during the registration period?",
+          "Will parents be accommodated by the institute during Orientation?",
+          "Is there any lodging provided for parents during registration events?"
+        ],
+        "responses": [
+          "No accommodation is provided for the parents."
+        ]
+      },
+      {
+        "tag": "previous_qualification_details",
+        "patterns": [
+          "What to fill in the field for ‘Previous Qualification Detail’ in FORM A?",
+          "What details should I enter for 'Previous Qualification Detail' in FORM A?",
+          "What do I input in the 'Previous Qualification Detail' section of FORM A?",
+          "Which information goes into the 'Previous Qualification Detail' in FORM A?",
+          "How to complete the 'Previous Qualification Detail' field on FORM A?"
+        ],
+        "responses": [
+          "Fill in the details for your XIIth standard."
+        ]
+      },
+      {
+        "tag": "missing_welcome_email",
+        "patterns": [
+          "What to do in case the Welcome email has not been received?",
+          "How to proceed if I haven't received the Welcome email?",
+          "What steps should I take if the Welcome email is missing?",
+          "I didn't receive the Welcome email, what should I do?",
+          "No Welcome email received, how to address this?"
+        ],
+        "responses": [
+          "Please note that the Welcome email has been sent to the students who had selected slide/freeze IITD by the 6th round. Kindly check the Spam/Junk folder of your email provided during JEE registration. Please ensure that you are checking the email ID provided during JEE registration. Contact arugs@iitd.ac.in if you haven’t received the email. Remember to attach your seat allotment document."
+        ]
+      },
+      {
+        "tag": "welcome_email_entry_number",
+        "patterns": [
+          "I have not received the Entry No. in my Welcome email.",
+          "What if the Entry No. is missing from my Welcome email?",
+          "The Entry No. isn't in the Welcome email, what should I do?",
+          "How to find the Entry No. if it's not in the Welcome email?",
+          "Is the Entry No. supposed to be in the Welcome email?"
+        ],
+        "responses": [
+          "The Entry No. is the Username mentioned in the Welcome email."
+        ]
+      },
+      {
+        "tag": "form_a_editing",
+        "patterns": [
+          "I have submitted Form A with the wrong details/incorrect document, can I edit it?",
+          "Is it possible to edit Form A after submission if I made a mistake?",
+          "Can I make changes to Form A after submitting it with errors?",
+          "What should I do if I submitted Form A with incorrect details?",
+          "After submitting Form A with errors, can I edit the form?"
+        ],
+        "responses": [
+          "Form A once submitted, can’t be edited. You may re-upload the correct document when it gets rejected by the Academic Section during verification. You may visit the Academic Section after classes begin to update any information."
+        ]
+      },
+      {
+        "tag": "bsfr_full_form",
+        "patterns": [
+          "What is the full form of BSFR?",
+          "Can you tell me what BSFR stands for?",
+          "What does BSFR mean?",
+          "What is BSFR an abbreviation for?",
+          "Could you provide the full name of BSFR?"
+        ],
+        "responses": [
+          "The full form is Benevolent Fund Scheme Rules (BFSR)."
+        ]
+      },
+      {
+        "tag": "missing_12th_passing_certificate",
+        "patterns": [
+          "I don’t have my 12th passing certificate. What should I do?",
+          "What can I do if I'm missing my 12th passing certificate?",
+          "How should I proceed without my 12th passing certificate?",
+          "If I lack my 12th passing certificate, what are my options?",
+          "What steps should I take if I don't have a 12th passing certificate?"
+        ],
+        "responses": [
+          "You may submit the undertaking (https://owncloud.iitd.ac.in/nextcloud/index.php/s/prHgdQFYL7Wg3RA) at this point but produce the passing certificate by 31st August 2023."
+        ]
+      },
+      {
+        "tag": "hostel_opt_out",
+        "patterns": [
+          "I do not wish to opt for a hostel. What should I do regarding Forms H1 & H2?",
+          "If I don't want a hostel, what should I do with Forms H1 and H2?",
+          "What actions should I take regarding Forms H1 and H2 if I do not need hostel accommodation?",
+          "How do I handle Forms H1 and H2 if I am not opting for a hostel?",
+          "What should be done with Forms H1 and H2 if not applying for hostel facilities?"
+        ],
+        "responses": [
+          "You may mention in the form that no hostel is required and upload the same on the Scorner portal."
+        ]
+      },
+      {
+        "tag": "form_c_jee_rank",
+        "patterns": [
+          "In Form C there is space for JEE Rank. Am I required to fill the Category rank or All India Rank?",
+          "Should I enter both my Category and All India Rank in Form C?",
+          "What ranks should be entered in Form C's JEE Rank field?",
+          "In Form C, which JEE ranks are necessary, Category or All India?",
+          "Do I need to fill in Category rank and All India Rank in Form C?"
+        ],
+        "responses": [
+          "Kindly mention both ranks."
+        ]
+      },
+      {
+        "tag": "hostel_facility_choice",
+        "patterns": [
+          "During payment of fees via SBI collect Portal, there is an option to choose for Hosteler 'Yes or No'. What should I choose?",
+          "What option should I select for hostel facilities on the SBI collect Portal during fee payment?",
+          "If using the SBI collect Portal to pay fees, should I select 'Yes' for hostel facilities?",
+          "On the SBI collect Portal, when paying my fees, should I opt for 'Yes' or 'No' for the hostel?",
+          "When making a payment on the SBI collect Portal, which hostel option should I select?"
+        ],
+        "responses": [
+          "Kindly choose ‘yes’ if you wish to avail the hostel facility in IITD."
+        ]
+      },
+      {
+        "tag": "form_a_marks_submission",
+        "patterns": [
+          "In Form A, should I put in the marks of my best 5 subjects or all subjects?",
+          "What marks should I enter in Form A: best five or all?",
+          "For Form A, do I need to submit marks for all subjects or just the top five?",
+          "Which marks are required in Form A, all subjects or just the best five?",
+          "Should I input marks of all subjects or only the best five in Form A?"
+        ],
+        "responses": [
+          "Put in the marks of all subjects cumulatively."
+        ]
+      },
+      {
+        "tag": "medical_certificate_josaa",
+        "patterns": [
+          "Can I use the medical certificate format provided by JoSAA for the registration/verification?",
+          "Is the JoSAA provided medical certificate format acceptable for registration?",
+          "Should I use the medical certificate from JoSAA for verification purposes?",
+          "Can the JoSAA medical certificate be used during the registration process?",
+          "Is it required to use the JoSAA's medical certificate format for verification?"
+        ],
+        "responses": [
+          "Yes, you are required to use the medical certificate provided by JoSAA for registration/verification."
+        ]
+      },
+      {
+        "tag": "academic_fee_visibility",
+        "patterns": [
+          "The Academic Fee is not showing on the Scorner portal.",
+          "Why can't I see the Academic Fee on the Scorner portal?",
+          "What should I do if the Academic Fee isn't visible on Scorner?",
+          "How do I find the Academic Fee on the Scorner portal when it's not showing?",
+          "Why is the Academic Fee missing from the Scorner portal?"
+        ],
+        "responses": [
+          "Kindly refer to the document in the link https://owncloud.iitd.ac.in/nextcloud/index.php/s/3PQwdNRYm6pDfYZ regarding steps to pay the Academic Fee. This is the only way of payment for the 2023 Entry UG Students."
+        ]
+      },
+      {
+        "tag": "parent_accommodation_during_orientation",
+        "patterns": [
+          "Would parents/guardians be given accommodation during Orientation/Registration?",
+          "Is accommodation provided to parents during Orientation and Registration?",
+          "Can parents get accommodation from IIT during Orientation?",
+          "Do parents receive housing during the Orientation and Registration period?",
+          "Are parents and guardians provided accommodation during Orientation?"
+        ],
+        "responses": [
+          "The parents/guardians would have to arrange for accommodation on their own. It is not provided by IIT Delhi."
+        ]
+      },
+      {
+        "tag": "welcome_email_deadline_extension",
+        "patterns": [
+          "I’ve not yet received my Welcome email and the time frame is too short to upload all the documents. Can the deadline be extended?",
+          "What if the Welcome email hasn't arrived yet and I'm running out of time to upload documents?",
+          "Can the document upload deadline be extended if I haven't received the Welcome email?",
+          "If the Welcome email is delayed, can the submission deadline be postponed?",
+          "Is there any flexibility on the document submission deadline if I don't receive the Welcome email on time?"
+        ],
+        "responses": [
+          "The deadline for submission of documents for online verification can’t be extended as 28th July 2023 is the date for Orientation in IIT Delhi. You are requested to keep the documents mentioned in the link https://owncloud.iitd.ac.in/nextcloud/index.php/s/bHMnQL3S9b69QFg ready and upload it when you receive the Welcome email. Please report for the Orientation/ Verification even if you are unable to upload any document. Ensure to submit the partial Form A and we’ll guide you regarding the next steps during registration/Verification."
         ]
       }
 ]
