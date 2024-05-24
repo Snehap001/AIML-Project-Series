@@ -11,6 +11,7 @@ import nltk
 from nltk.stem import WordNetLemmatizer
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 lemmatizer = WordNetLemmatizer()
 nlp = spacy.load("en_core_web_sm")
 from tensorflow.keras.models import load_model
@@ -21,17 +22,21 @@ import json
 with open('intents.json') as f:
     intents = json.load(f)
 
+def loading():
+    model_name = "microsoft/DialoGPT-medium"
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model2 = load_model('chatbot_model.keras')
+    words = pickle.load(open('words.pkl', 'rb'))
+    classes = pickle.load(open('classes.pkl', 'rb'))
+    model = AutoModelForCausalLM.from_pretrained(model_name)
+    chatbot = transformers.pipeline('conversational', model=model, tokenizer=tokenizer)
+    context_manager = ConversationContext()
+    return model_name,tokenizer,model,model2,words,classes,chatbot,context_manager
 
-model_name = "microsoft/DialoGPT-medium"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
-model2 = load_model('chatbot_model.keras')
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
 
-chatbot = transformers.pipeline('conversational', model=model, tokenizer=tokenizer)
-context_manager = ConversationContext()
-user_memory = {}
+
+model_name,tokenizer,model,model2,words,classes,chatbot,context_manager=loading()
+
 user_id = "default_user"
 
 def clean_up_sentence(sentence):
@@ -71,7 +76,7 @@ def is_question(sentence):
             return True   
     return False
 
-def personalize_response(response, user_id):
+def personalize_response(response, user_id,user_memory):
     if user_id in user_memory:
         user_info = user_memory[user_id]
         for key in user_info:
@@ -102,62 +107,56 @@ def extract_entities(text):
     doc = nlp(text)
     entities = {ent.label_: ent.text for ent in doc.ents}
     return entities
-def store_user_info(user_id, entities):
+def store_user_info(user_id, entities,user_memory):
     if user_id not in user_memory:
         user_memory[user_id] = {}
     user_memory[user_id].update(entities)
-def chat_with_memory():
+def chat_with_memory(user_input,user_memory):
   
-    print("Start chatting with the bot (type 'quit' to stop)!")
-    while True:
-        print("You: ",end="")
-        user_input = input()
-        if user_input.lower() == 'quit':
-            break
-        
-        new_ques=user_input
-        isQues=is_question(user_input)
-        if(isQues):
-            new_ques=context_manager.combine_questions(user_input)
-            print("new question is: ",new_ques)
-            context_manager.add_question(user_input)
-        else:
-            entities = extract_entities(user_input)
-            if entities:
-                store_user_info(user_id, entities)
+    
+    new_ques=user_input
+    isQues=is_question(user_input)
+    if(isQues):
+        new_ques=context_manager.combine_questions(user_input)
+        print("new question is: ",new_ques)
+        context_manager.add_question(user_input)
+    else:
+        entities = extract_entities(user_input)
+        if entities:
+            store_user_info(user_id, entities,user_memory)
 
-        if((not(isQues) and not(entities)) ):
+    
+        
+    
+    ints = predict_class(new_ques, model2)
+    intent_responses=""
+    if(len(ints)==0):
+        custom_response=False
+    else:
+        tag = ints[0]['intent']
+        custom_response=False
+        for i in intents['intents']:
+            if i['tag']==tag:
+                custom_response=True
+                if '{' in i['responses'][0] and '}' in i['responses'][0]:
+                    intent_responses = personalize_response(random.choice(i['responses']), user_id,user_memory)
+                else:
+                    intent_responses = random.choice(i['responses'])
+                break
+    if custom_response:
+
+        return intent_responses
+
+        
+    else:
+        if((not(isQues) )  ):
             follow_up=generate_followup_questions(user_input)
+            questions=""
             for q in follow_up:
-                print("Bot: ",q)
-            print("You: ",end="")
-            user_input = input()
-            new_ques=user_input
+                questions+=q+'\n'
+            return questions
+        return "No info available"
         
-        ints = predict_class(new_ques, model2)
-        intent_responses=""
-        if(len(ints)==0):
-            custom_response=False
-        else:
-            tag = ints[0]['intent']
-            custom_response=False
-            for i in intents['intents']:
-                if i['tag']==tag:
-                    custom_response=True
-                    if '{' in i['responses'][0] and '}' in i['responses'][0]:
-                        intent_responses = personalize_response(random.choice(i['responses']), user_id)
-                    else:
-                        intent_responses = random.choice(i['responses'])
-                    break
-        if custom_response:
-
-            print("custom response")
-            print("Bot: ",intent_responses)
-
-            
-        else:
-            print("sorry I am unable to infer what You are trying to communicate")
-            
-        
-if __name__ == "__main__":
-    chat_with_memory()
+# if __name__=='__main__':
+#    user_memory={}
+#    print(chat_with_memory("Hello",user_memory)) 

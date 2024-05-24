@@ -28,7 +28,3 @@ def generate_followup_questions(question, num_followups=3, max_length=50):
     return followup_list
 
 
-question = "I want to take admission into the college"
-followup_questions = generate_followup_questions(question)
-for i, fq in enumerate(followup_questions, 1):
-    print(f"Follow-up question {i}: {fq}")

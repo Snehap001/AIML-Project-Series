@@ -6,6 +6,16 @@
         "responses": ["Hello {PERSON}! How can I assist you ?", "Hi {PERSON}! What can I do for you?", "Hey {PERSON}! How can I help?"]
       },
       {
+        "tag":"name",
+        "patterns":["Hello I am ","Hi I am ","My name is ","I am ","You can call me "],
+        "responses":["Hello {PERSON}! Nice to meet you!", "Hello {PERSON}! How can I assist you?"]
+      },
+      {
+        "tag":"your_name",
+        "patterns":["What is my name?", "Who am I?", "Do you know me?"],
+        "responses":["Yes you are {PERSON}","If you have provided me your correct identity then you are {PERSON}"]
+      },
+      {
         "tag": "goodbye",
         "patterns": ["Bye", "Goodbye", "See you later", "Meet you again"],
         "responses": ["Goodbye! Have a great day!", "See you again!", "Hope I could be of help!"]
@@ -27,7 +37,7 @@
         "tag": "admission_procedure",
         "patterns": ["What is the admission procedure?", "How do I apply for admission?", "What are the steps to apply for admission?", "Can you explain the admission process?"],
         "responses": [
-          "The admission procedure generally involves the following steps:\n1. Fill out the online application form.\n2. Submit the required documents (transcripts, recommendation letters, etc.).\n3. Select the priority for your branch and colleges\n4. .\n5. Wait for the admission decision."
+          "The admission procedure generally involves the following steps:\n1. Fill out the online application form.\n2. Submit the required documents (transcripts, recommendation letters, etc.).\n3. Select the priority for your branch and colleges.\n5. Wait for the admission decision."
         ]
       },
       {
@@ -68,12 +78,71 @@
         ]
       },
       {
-        "tag": "scholarships",
-        "patterns": ["Are there any scholarships available?", "How can I apply for scholarships?", "What scholarships are offered?", "Can I get a scholarship?"],
+        "tag": "scholarship_general_info",
+        "patterns": [
+            "What scholarships are available?",
+            "Can you tell me about the scholarships?",
+            "What kinds of scholarships do you offer?"
+        ],
         "responses": [
-          "Yes, we offer several scholarships based on academic merit, financial need, and extracurricular involvement. To apply, you need to fill out the scholarship application form available on our website. Deadlines for scholarship applications are usually aligned with admission application deadlines."
+            "Our college offers a variety of scholarships based on merit, financial need, and special talents. Would you like to know more about specific criteria or how to apply?"
         ]
-      },
+    },
+    {
+        "tag": "scholarship_eligibility",
+        "patterns": [
+            "Who is eligible for scholarships?",
+            "What are the eligibility requirements for scholarships?",
+            "Am I eligible for any scholarships?"
+        ],
+        "responses": [
+            "Eligibility for scholarships varies depending on the specific scholarship program. Most merit-based scholarships require excellent academic records, while need-based scholarships require proof of financial necessity."
+        ]
+    },
+    {
+        "tag": "scholarship_application_process",
+        "patterns": [
+            "How do I apply for scholarships?",
+            "What is the scholarship application process?",
+            "Can you guide me through the scholarship application?"
+        ],
+        "responses": [
+            "To apply for scholarships, you will need to complete the scholarship application form available on our website. Make sure to submit all required documents, such as your transcripts, financial statements, and any other required essays or references by the deadline."
+        ]
+    },
+    {
+        "tag": "scholarship_deadlines",
+        "patterns": [
+            "When is the deadline for scholarship applications?",
+            "What are the scholarship application deadlines?",
+            "By when should I apply for the scholarship?"
+        ],
+        "responses": [
+            "Scholarship application deadlines vary by the scholarship. Typically, the deadline to apply for scholarships is in the spring for the following academic year. Please check our website or contact the scholarship office for specific dates."
+        ]
+    },
+    {
+        "tag": "scholarship_amount",
+        "patterns": [
+            "How much can I get from a scholarship?",
+            "What is the amount of the scholarships offered?",
+            "How much money do the scholarships cover?"
+        ],
+        "responses": [
+            "The amount of scholarship awarded can vary widely. Some scholarships cover the full tuition, while others may provide a stipend to assist with your educational expenses. Specific details can be found in the scholarship description on our website or from our scholarship office."
+        ]
+    },
+    {
+        "tag": "scholarship_renewal",
+        "patterns": [
+            "Can scholarships be renewed?",
+            "What is the renewal process for scholarships?",
+            "Do I need to reapply for my scholarship each year?"
+        ],
+        "responses": [
+            "Some scholarships are renewable, provided you maintain eligibility requirements such as a minimum GPA or enrollment status. You may need to reapply or provide updated documentation each year. Please refer to the specific scholarship terms for renewal policies."
+        ]
+    },
       {
         "tag": "campus_tours",
         "patterns": ["Can I visit the campus?", "Are campus tours available?", "How do I schedule a campus tour?", "Can I see the campus?"],
@@ -521,6 +590,79 @@
         ],
         "responses": [
           "The deadline for submission of documents for online verification can’t be extended as 28th July 2023 is the date for Orientation in IIT Delhi. You are requested to keep the documents mentioned in the link https://owncloud.iitd.ac.in/nextcloud/index.php/s/bHMnQL3S9b69QFg ready and upload it when you receive the Welcome email. Please report for the Orientation/ Verification even if you are unable to upload any document. Ensure to submit the partial Form A and we’ll guide you regarding the next steps during registration/Verification."
+        ]
+      },
+      {
+        "tag":"location",
+        "patterns":["what is the location of campus?","How can I find where the campus is located?","Where is the campus situated?","Can you tell me the location of the campus?","In what area is the campus found?","What are the coordinates of the campus?","How do I get to the campus?"],
+        "responses":["The Indian Institute of Technology Delhi (IIT Delhi) is located in the Hauz Khas area of New Delhi, India. It is situated near the Hauz Khas Metro Station, which is part of the Yellow Line of Delhi Metro. The campus is also close to other educational and cultural landmarks such as the Jawaharlal Nehru University (JNU) and the National Institute of Fashion Technology (NIFT).","The exact address is: \n Indian Institute of Technology Delhi \n Hauz Khas, \n New Delhi, Delhi 110016 \n India\n IIT Delhi is known for its expansive and green campus which offers a serene environment in the midst of the bustling city of New Delhi."]
+      },
+      {
+        "tag":"speciality",
+        "patterns":["What is unique about the institute?","What distinguishes the institute from others?","What makes the institute special?","Can you tell me what's unique about the institute?","What sets the institute apart from others?","In what ways is the institute different?"],
+        "responses":["IIT Delhi (Indian Institute of Technology Delhi) is renowned for several unique aspects that set it apart from other educational institutions in India and globally: \n 1. Academic Excellence: IIT Delhi is known for its rigorous academic programs that emphasize both theoretical knowledge and practical applications. The institution offers a range of undergraduate, postgraduate, and doctoral programs that are highly respected worldwide. \n 2. Research and Innovation: The institute has a strong focus on research, encouraging students and faculty to engage in cutting-edge projects.\n 3. Entrepreneurial Culture: IIT Delhi has a vibrant entrepreneurial culture, supported by an incubation center known as FITT (Foundation for Innovation and Technology Transfer) which helps in nurturing startup ideas from students and faculty into successful businesses.\n Sustainability Initiatives: IIT Delhi places a strong emphasis on sustainability, incorporating green practices in its campus development and operations."]
+      },{
+        "tag": "campus_housing",
+        "patterns": [
+          "Can you tell me about the housing options on campus?",
+          "What are the dormitory facilities like?",
+          "Where do most students live?",
+          "What kind of accommodations does the college offer?"
+        ],
+        "responses": [
+          "Campus offers hostel facility , there are 11 boys hostel and 3 girls hostel. Also apartments are available for phd programs"
+        ]
+      },
+      {
+        "tag": "dining_services",
+        "patterns": [
+          "What kind of food services are available on campus?",
+          "Where can I eat on campus?",
+          "Tell me about the meal plans.",
+          "Are there vegetarian options in the cafeterias?"
+        ],
+        "responses": [
+          "Our campus dining services include multiple cafeterias and coffee shops offering a range of cuisines, including vegetarian and vegan options.",
+          "We offer flexible meal plans to suit different dietary needs and preferences, with numerous dining halls located throughout the campus."
+        ]
+      },
+      {
+        "tag": "student_clubs",
+        "patterns": [
+          "What clubs can I join on campus?",
+          "Tell me about student organizations at the college.",
+          "Are there any sports clubs?",
+          "How can I get involved in extracurricular activities?"
+        ],
+        "responses": [
+          "We have a diverse range of student clubs and organizations, including sports, arts, cultural, and academic clubs. You're sure to find one that interests you!",
+          "Getting involved is easy! Visit our student activities office or check out the clubs fair at the beginning of the semester to learn more about how to join."
+        ]
+      },
+      {
+        "tag": "campus_events",
+        "patterns": [
+          "What events are happening on campus this month?",
+          "Tell me about upcoming activities at college.",
+          "How do I find out about campus events?",
+          "Are there any annual events on campus?"
+        ],
+        "responses": [
+          "Our campus hosts a variety of events throughout the year, including guest lectures, concerts, and movie nights. Check our events calendar on the website for the latest updates.",
+          "We have several annual events like the Rendezvours Fest, SportTech, and Tryst that bring together students for fun and learning."
+        ]
+      },
+      {
+        "tag": "campus_safety",
+        "patterns": [
+          "How safe is the campus?",
+          "What security measures are in place at college?",
+          "Is there a campus police?",
+          "What should I do in an emergency?"
+        ],
+        "responses": [
+          "Campus safety is our top priority. We have 24/7 campus police, comprehensive surveillance systems, and emergency call stations throughout the campus.",
+          "In case of an emergency, call campus security or use one of the many emergency reporting stations around campus. Safety instructions and procedures are also available online and in each classroom."
         ]
       }
 ]
