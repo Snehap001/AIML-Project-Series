@@ -22,7 +22,7 @@
       },
       {
         "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "I appreciate it", "Thanks a lot"],
+        "patterns": ["Thanks", "Thank you", "I appreciate it", "Thanks a lot","Thank you for the information"],
         "responses": ["You're welcome!", "Happy to help!", "No problem!"]
       },
       
