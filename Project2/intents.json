@@ -26,7 +26,11 @@
         "responses": ["You're welcome!", "Happy to help!", "No problem!"]
       },
       
-      
+      {
+        "tag":"work",
+        "patterns":["What do you do ?","How can you help me?", "What can I get from you?","What is your speciality?","What can I expect from you?"],
+        "responses":["I am here to guide you about admission related queries. Feel free to ask me any information you need regarding admission in our college."]
+      },
       {
         "tag":"application_timeline",
         "patterns":["When should I start applying to college?","What is the time for the application process?","When should I start the application process?"],
