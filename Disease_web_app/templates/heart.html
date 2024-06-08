@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Information Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+</head>
+<body>
+    <div class="container" style="margin-left: 0px;margin-right: 0px;">
+        <div class="row">
+            <div class="col-sm-8">
+                <form action="/submit_form_heart" method="post">
+                    <div class="row mb-3">
+                      <label for="age" class="col-sm-2 col-form-label">Age</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="age" name="age">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="RestingBP" class="col-sm-2 col-form-label">RestingBP</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="RestingBP" name="RestingBP">
+                      </div>
+                    </div>
+                    <div class="row mb-3 ">
+                        <div class="col-sm-6">
+                            <select class="form-select " aria-label="Default select example" name="sex">
+                                <option selected>Gender</option>
+                                <option value="F">Female</option>
+                                <option value="M">Male</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <select class="form-select " aria-label="Default select example" name="chestPain">
+                                <option selected>Chest Pain Type</option>
+                                <option value="NAP">Non-Anginal Pain</option>
+                                <option value="ASY">Asymptomatic</option>
+                                <option value="ATA">Atypical Angina</option>
+                                <option value="TA">Typical Angina</option>
+                            </select>
+                        </div>
+                        
+            
+                    </div>
+                    <div class="row mb-3 ">
+                        <div class="col-sm-6">
+                            <select class="form-select " aria-label="Default select example" name="fastingBP">
+                                <option selected>FastingBP</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <select class="form-select " aria-label="Default select example" name="restingECG">
+                                <option selected>Resting ECG</option>
+                                <option value="Normal">Normal</option>
+                                <option value="ST">ST</option>
+                          
+                            </select>
+                        </div>
+                        
+            
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="OldPeak" class="col-sm-2 col-form-label">Old Peak</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="OldPeak" placeholder="e.g. 1.5 " name="OldPeak">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="maxHR" class="col-sm-2 col-form-label">Maximum Heart Rate</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="maxHR" placeholder="" name="maxHR">
+                        </div>
+                      </div>
+                      <div class="row mb-3 ">
+                        <div class="col-sm-6">
+                            <select class="form-select " aria-label="Default select example" name="exerciseAngina">
+                                <option selected>Exercise Angina</option>
+                                <option value="N">No</option>
+                                <option value="Y">Yes</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <select class="form-select " aria-label="Default select example" name="st_slope">
+                                <option selected>ST Slope</option>
+                                <option value="Flat">Flat</option>
+                                <option value="Up">Up</option>
+                          
+                            </select>
+                        </div>
+                        
+            
+                    </div>
+                    <div class="row mb-3">
+                        <label for="cholesterol" class="col-sm-2 col-form-label">Cholesterol</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="cholesterol" placeholder="" name="cholesterol">
+                        </div>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            <div class="col-sm-4">
+                <div class="result_side">
+                    {% if show_div %}
+                    <div id="result"  style="display:inline-block;">
+                        <p>{{disease}}</p>
+                        
+                    </div>
+                    {% else %}
+                        <div id="myDiv" style="display:none;">This is a div</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+    
+    
+</body>
+</html>

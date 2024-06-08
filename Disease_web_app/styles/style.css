@@ -1,0 +1,7 @@
+.form_side, .result_side{
+    display: flex;
+    flex:1;
+}
+.container{
+    display: flex;
+}
