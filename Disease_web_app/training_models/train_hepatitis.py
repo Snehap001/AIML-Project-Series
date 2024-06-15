@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-dataset = pd.read_csv('./static/csv_files/heart.csv')
+dataset = pd.read_csv('./static/csv_files/hepatitis_csv.csv')
 dataset=dataset.dropna()
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
@@ -12,9 +12,6 @@ from sklearn.preprocessing import OneHotEncoder
 
 
 
-ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0,1,2,3,4])], remainder='passthrough')
-
-X = np.array(ct.fit_transform(X))
 
 from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
@@ -28,22 +25,20 @@ X_train = sc.fit_transform(X)
 
 
 from sklearn.svm import SVC
-
-classifier = SVC(kernel = 'rbf',C=1, gamma=0.01, random_state = 0)
+classifier = SVC(kernel = 'rbf', random_state = 0)
 classifier.fit(X_train, y)
 
 import pickle
 
 # Save the classifier
-with open('./model/heart/svm_classifier.pkl', 'wb') as file:
+with open('./model/hepatitis/svm_classifier.pkl', 'wb') as file:
     pickle.dump(classifier, file)
 
 # Optionally, save the column transformer and standard scaler
-with open('./model/heart/column_transformer.pkl', 'wb') as file:
-    pickle.dump(ct, file)
 
-with open('./model/heart/standard_scaler.pkl', 'wb') as file:
+
+with open('./model/hepatitis/standard_scaler.pkl', 'wb') as file:
     pickle.dump(sc, file)
 
-with open('./model/heart/label_encoder.pkl', 'wb') as file:
+with open('./model/hepatitis/label_encoder.pkl', 'wb') as file:
     pickle.dump(le, file)

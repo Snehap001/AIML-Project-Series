@@ -1,0 +1,44 @@
+/* .form_side, .result_side{
+    display: flex;
+    flex:1;
+} */
+
+
+.navbar.nav-top{
+    background-color: rgb(255, 105, 105);
+}
+.row.disease_btns{
+    margin-top: 10vh;
+    padding-top: 10vh;
+
+
+}
+.result_side{
+    margin-top: 30vh;
+    margin-left: 30vh;
+}
+
+.btn.btn-primary.submit-btn{
+    background-color:rgb(255, 105, 105);
+    color: white;
+    
+}
+.btn.btn-entry{
+    background-color:rgb(255, 105, 105);
+    color: white;
+    
+    font-size: xx-large;
+}
+.btn.btn-entry:hover{
+    background-color: rgb(200, 0, 54);
+    color: white;
+}
+.p-tag{
+    margin-top: 4vh;
+    font-size: x-large;
+    background-color: rgb(12, 24, 68);
+    color:azure;
+
+
+}
+
