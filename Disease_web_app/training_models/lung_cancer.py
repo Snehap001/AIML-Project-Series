@@ -3,7 +3,6 @@ import pickle
 with open('./model/lung_cancer/svm_classifier.pkl', 'rb') as file:
     classifier = pickle.load(file)
 
-# If needed, load the column transformer and standard scaler
 with open('./model/lung_cancer/column_transformer.pkl', 'rb') as file:
     ct = pickle.load(file)
 
@@ -20,10 +19,8 @@ def lung_predict(GENDER,AGE,YELLOW_FINGERS,ANXIETY,PEER_PRESSURE,CHRONIC_DISEASE
     new_data = np.array(ct.transform(new_data))
   
     new_data_scaled = sc.transform(new_data)
-    # Predict the output using the trained classifier
     predicted_output = classifier.predict(new_data_scaled)
     predicted_label = le.inverse_transform(predicted_output)
 
-# Print the predicted disease name
     return(predicted_label[0])
 

@@ -25,11 +25,9 @@ classifier.fit(X_train, y)
 
 import pickle
 
-# Save the classifier
 with open('./model/cancer/svm_classifier.pkl', 'wb') as file:
     pickle.dump(classifier, file)
 
-# Optionally, save the column transformer and standard scaler
 
 
 with open('./model/cancer/standard_scaler.pkl', 'wb') as file:

@@ -3,7 +3,6 @@ import pickle
 with open('./model/diabetes/svm_classifier.pkl', 'rb') as file:
     classifier = pickle.load(file)
 
-# If needed, load the column transformer and standard scaler
 with open('./model/diabetes/column_transformer.pkl', 'rb') as file:
     ct = pickle.load(file)
 
